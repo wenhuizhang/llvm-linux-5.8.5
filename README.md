@@ -53,3 +53,14 @@ https://www.kernel.org/
 
 - 2. Compile kernel with LLVM
 
+```
+// cp .config 
+make menuconfig LLVM=1
+make -j4 LLVM=1
+sudo make modules_install
+sudo make install
+sudo update-grub2
+sudo reboot
+```
+
+
