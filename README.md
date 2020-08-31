@@ -47,11 +47,13 @@ export PATH=/home/wenhui/llvm-10.0.0.src/build/bin:$PATH
 
 ## 2. Compile Linux 5.8.5 with LLVM 10
 
-- 1. Download tar ball 5.8.5 
+### 2.1 Download tar ball 5.8.5 
 
 https://www.kernel.org/
-
-- 2. Compile kernel with LLVM
+`
+tar -xvf linux-5.8.5.tar.xz
+`
+### 2.2. Compile kernel with LLVM
 
 ```
 // cp .config 
