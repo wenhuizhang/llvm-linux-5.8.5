@@ -44,7 +44,9 @@ OR
 
 export PATH=/home/wenhui/llvm-10.0.0.src/build/bin:$PATH
 ```
-
+```
+sudo ln -s  /usr/local/llvm-10/bin/clang /usr/bin/clang
+```
 ## 2. Compile Linux 5.8.5 with LLVM 10
 
 ### 2.1 Download tar ball 5.8.5 
