@@ -59,8 +59,8 @@ tar -xvf linux-5.8.5.tar.xz
 // cp .config 
 make menuconfig LLVM=1
 make -j4 LLVM=1
-sudo make modules_install
-sudo make install
+sudo make modules_install LLVM=1
+sudo make install LLVM=1
 sudo update-grub2
 sudo reboot
 ```
