@@ -18,6 +18,11 @@ mkdir build
 cd build
 
 ```
+change to golden linker to avoid memory outrage
+```
+sudo ln -s `which gold` /usr/local/bin/ld
+```
+
 Using Ninja
 ```
 
