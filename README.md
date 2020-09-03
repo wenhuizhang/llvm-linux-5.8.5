@@ -5,6 +5,11 @@
 
 ### 1.1 install llvm 10.0 from git repo
 ```
+sudo apt-get install software-properties-common 
+sudo add-apt-repository ppa:jonathonf/gcc-9.0 
+sudo apt-get update 
+sudo apt-get install gcc-9
+
 sudo apt-get install build-essential gcc-9-plugin-dev clang ninja-build cmake libncurses5-dev libelf-dev libssl-dev flex bison bc git pigz
 // git clone https://github.com/llvm/llvm-project.git
 cd llvm-project
