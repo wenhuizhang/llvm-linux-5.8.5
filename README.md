@@ -26,17 +26,17 @@ sudo ln -s `which gold` /usr/local/bin/ld
 Using Ninja
 ```
 
-// # cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' \
+// # cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DLLVM_USE_LINKER=gold \
 -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_WARNINGS=OFF \
 -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
 
-// cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DCMAKE_BUILD_TYPE=Debug -DLLVM_ENABLE_WARNINGS=OFF -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
+// cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DCMAKE_BUILD_TYPE=Debug -DLLVM_ENABLE_WARNINGS=OFF -DLLVM_USE_LINKER=gold -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
 
-# cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' \
+# cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DLLVM_USE_LINKER=gold \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLVM_ENABLE_WARNINGS=OFF \
 -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
 
-cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLVM_ENABLE_WARNINGS=OFF -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
+cmake -G Ninja -DLLVM_ENABLE_PROJECTS='clang;lld;compiler-rt' -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLVM_ENABLE_WARNINGS=OFF -DLLVM_USE_LINKER=gold -DCMAKE_INSTALL_PREFIX=/usr/local/llvm-10 ../llvm
 
 ninja
 sudo ninja install
